@@ -41,8 +41,8 @@ const SignUp = ({login, password, changeLogin, changePassword}) => {
             <button onClick={click} className={styles.button} type="submit"><img width='41' height='50' src={arrow}
                                                                                  alt="arrow"/>
             </button>
-            <p><span style={{color: styleLogin}}>логин должен состоять из латиницы и начинаться с любого из этих знаков $ . + @ и не должен быть пустым</span><br/><br/><span
-                style={{color: stylePassword}}>пороль должен состоять из 8 цифр и не должен быть пустым</span>
+            <p><span style={{color: styleLogin}}>логин должен состоять из латиницы и начинаться с любого из этих знаков $ . + @ и не должен быть пустым.</span><br/><br/><span
+                style={{color: stylePassword}}>пороль должен состоять из 8 цифр и не должен быть пустым.</span>
             </p>
         </div>
 
