@@ -1,0 +1,50 @@
+.grid{
+  display: grid;
+  grid-template-areas: "selected cards";
+  grid-template-rows: 100%;
+  grid-template-columns: 542px 1fr;
+  @media screen and (max-width: 795px) {
+    grid-template-areas: "selected "
+                          "cards";
+    grid-template-columns: none;
+    grid-template-rows: 200px 1fr;
+  }
+  .selected{
+    grid-area: selected;
+    select{
+      width: 200px;
+      height: 60px;
+      color: black;
+      font-size: 16px;
+      font-weight: 600;
+      display: block;
+      margin: 40px auto;
+      text-align: center;
+      @media screen and (max-width: 795px) {
+        margin: 10px auto;
+        width: 150px;
+        height: 40px;
+      }
+    }
+
+  }
+  .cards{
+    grid-area: cards;
+    ul{
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      overflow: auto;
+      height: 800px;
+      a{
+        text-decoration: none;
+      }
+    }
+    ul::-webkit-scrollbar{
+      width: 0;
+    }
+
+  }
+}

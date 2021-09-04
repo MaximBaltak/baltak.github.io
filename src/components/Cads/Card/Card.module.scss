@@ -1,0 +1,28 @@
+.card {
+  margin-top: 20px;
+  width: 198px;
+  min-height: 269px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 111px;
+    height: 107px;
+  }
+
+  h2 {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+
+  }
+
+  p {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
