@@ -42,7 +42,7 @@ const SignUp = ({login, password, changeLogin, changePassword}) => {
                                                                                  alt="arrow"/>
             </button>
             <p><span style={{color: styleLogin}}>логин должен состоять из латиницы и начинаться с любого из этих знаков $ . + @ и не должен быть пустым</span><br/><br/><span
-                style={{color: stylePassword}}>пороль должен состоять минимум из 8 цифр и не должен быть пустым</span>
+                style={{color: stylePassword}}>пороль должен состоять из 8 цифр и не должен быть пустым</span>
             </p>
         </div>
 
