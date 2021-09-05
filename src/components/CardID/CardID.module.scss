@@ -1,0 +1,98 @@
+.grid {
+  display: grid;
+  grid-template-areas: "description information";
+  width: 100%;
+  grid-template-columns: 800px 1fr;
+  @media screen and (max-width: 1255px) {
+    grid-template-areas: "description"
+                        "information";
+    grid-template-rows: 600px 1fr;
+    grid-template-columns: none;
+    align-items: center;
+
+  }
+
+  .description {
+    grid-area: description;
+    padding: 40px;
+
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 600px;
+      height: 449px;
+      @media screen and (max-width: 725px) {
+        width: 400px;
+        height: 355px;
+
+      }
+      @media screen and (max-width: 533px) {
+        width: 300px;
+        height: 255px;
+
+      }
+      @media screen and (max-width: 385px) {
+        width: 200px;
+        height: 155px;
+
+      }
+    }
+
+    p {
+      margin: 20px auto;
+      display: block;
+      color: black;
+      font-size: 20px;
+      font-weight: 500;
+      width: 400px;
+      word-break: break-all;
+      text-align: center;
+      @media screen and (max-width: 533px) {
+        width: 250px;
+        font-size: 17px;
+
+      }
+      @media screen and (max-width: 385px) {
+        width: 200px;
+        font-size: 14px;
+
+      }
+
+    }
+  }
+
+  .information {
+    grid-area: information;
+    padding: 40px;
+
+    p {
+      color: black;
+      font-size: 20px;
+      font-weight: 500;
+      @media screen and (max-width: 1255px) {
+        text-align: center;
+        margin: 20px auto;
+        width: 400px;
+
+      }
+      @media screen and (max-width: 533px) {
+        width: 250px;
+        font-size: 18px;
+
+
+      }
+      @media screen and (max-width: 385px) {
+        width: 150px;
+        font-size: 14px;
+
+      }
+
+    }
+
+    hr {
+      width: 100%/2;
+
+    }
+  }
+}
